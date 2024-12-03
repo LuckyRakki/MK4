@@ -1,0 +1,3 @@
+<LinearLayout android:id="@+id/NavBar"...android:background="@color/navBarTransparent">
+
+    </LinearLayout>
