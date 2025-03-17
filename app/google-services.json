@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "8261696570",
+    "project_id": "fire-login-45fd0",
+    "storage_bucket": "fire-login-45fd0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8261696570:android:3d53ccb6d3e06ef0474903",
+        "android_client_info": {
+          "package_name": "com.example.pas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9r4eCBU-cG4k_fmKjR_mAfdIHcc-o3Pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8261696570:android:ecb36631e018f876474903",
+        "android_client_info": {
+          "package_name": "com.lucky.litera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9r4eCBU-cG4k_fmKjR_mAfdIHcc-o3Pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

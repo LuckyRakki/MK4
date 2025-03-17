@@ -1,58 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="440dp"
-        android:layout_height="800dp"
-        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@android:color/white">
 
-    <LinearLayout
-        android:id="@+id/borderuser"
-        android:layout_width="401dp"
-        android:layout_height="600dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/usernameborder"
-        android:orientation="vertical"
-        android:gravity="bottom|center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/black" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="256dp"
-        android:layout_height="58dp"
-        android:text="@string/total_koleksi_perpustakaan_10_000_masuk_dan_telusuri_sekarang_2023"
-        android:lines="3"
+        <TextView
+            android:id="@+id/tvUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User ID: "
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/darker_gray" />
 
-        android:textAlignment="center"
-        android:textColor="#F7F0F0"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btnEmailVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Verification Email"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white" />
     </LinearLayout>
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
