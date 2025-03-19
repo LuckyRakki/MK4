@@ -32,7 +32,6 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
         // Set OnClickListener untuk tombol
         binding.btnLogin.setOnClickListener(this)
         binding.btnEmail.setOnClickListener(this)
-        binding.btnPhone.setOnClickListener(this)
         binding.tvSignUp.setOnClickListener(this)
 
         // Inisialisasi Google Sign-In
@@ -72,7 +71,7 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Login berhasil, navigasi ke MainActivity
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, Profil::class.java)
                     startActivity(intent)
                     finish()
                 } else {
